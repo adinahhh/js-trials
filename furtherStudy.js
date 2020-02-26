@@ -9,11 +9,14 @@ function wordsInCommon(words1, words2) {
 
   const result = new Set();
 
+  let newArray = [...result];
+
   for (const word of setWords1) {
     if (setWords2.has(word)) {
       result.add(word);
     }
-    return result.from();
+    return newArray;
+    console.log(newArray);
   }
 }
 
